@@ -12,6 +12,7 @@ const form = useState('routineForm', () => {
 })
 
 const createRoutine = () => {
+  console.log(form.value)
   useFetch('/api/routines', {
     method: 'post',
     body: {

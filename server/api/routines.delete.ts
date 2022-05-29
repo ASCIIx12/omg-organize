@@ -1,8 +1,9 @@
 import {MongoClient, ObjectId} from "mongodb";
 import {defineEventHandler, useBody} from "h3";
-import Routine from "~/server/model/routine";
+import Routine from "~/server/model/Routine";
+import {CONSTANT} from "~/server/CONSTANT";
 
-const mongo = new MongoClient('mongodb://localhost:27017')
+const mongo = new MongoClient(CONSTANT.MONGO_URI)
 
 export default defineEventHandler(async event => {
 

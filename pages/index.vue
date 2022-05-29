@@ -77,7 +77,7 @@ const toListing = () => {
                 <RoutineCreator @close="toListing()"/>
               </div>
               <div v-else class="flex flex-col gap-2">
-                <routine class="w-full" v-for="(routine, index) in data" :key="index" :data="routine" :compact="true" @refresh="refresh"/>
+                <routine class="w-full" v-for="(routine, index) in data" :key="index" :data="routine" :compact="true" @refresh="() => refresh()"/>
               </div>
           </div>
         </div>

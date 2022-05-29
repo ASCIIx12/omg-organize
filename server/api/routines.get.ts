@@ -1,8 +1,9 @@
 import {defineEventHandler} from "h3";
 import {MongoClient} from "mongodb";
-import Routine from "~/server/model/routine";
+import Routine from "~/server/model/Routine";
+import {CONSTANT} from "~/server/CONSTANT";
 
-const mongo = new MongoClient('mongodb://localhost:27017')
+const mongo = new MongoClient(CONSTANT.MONGO_URI)
 let result = []
 
 export default defineEventHandler(async () => {

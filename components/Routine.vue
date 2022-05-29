@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Routine from "~/server/model/routine";
+import Routine from "~/server/model/Routine";
 import { BanIcon, PencilAltIcon } from "@heroicons/vue/solid"
 import {useFetch} from "#app";
 

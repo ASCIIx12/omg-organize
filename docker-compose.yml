@@ -1,9 +1,7 @@
-version: "3"
-
+version: "3.8"
 services:
-  nuxt-app:
-    container_name: nuxt-app
-    image: asciix12/nuxt-app
+  client:
+    container_name: omg-organizer
     restart: always
     build: .
     ports:
