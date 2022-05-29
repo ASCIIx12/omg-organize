@@ -1,5 +1,5 @@
 export default interface Routine {
-    _id: {
+    _id?: {
         "$oid": string
     }
     contents: {
@@ -9,18 +9,8 @@ export default interface Routine {
     }
     config?: {}
     meta: {
-        created: {
-            "$timestamp": {
-                "t": number,
-                "i": number
-            }
-        }
-        updated: {
-            "$timestamp": {
-                "t": number,
-                "i": number
-            }
-        }
+        created: string
+        updated: string
         createdBy?: string
     }
 }
